@@ -95,3 +95,10 @@
     color: white;
     cursor: pointer;
 }
+.txtUsername{
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 10px;
+}

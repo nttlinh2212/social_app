@@ -79,8 +79,9 @@ function Topbar(props) {
                     </div>
 
                 </div>
-                <Link to={`/profile/${user?.username}`}>
+                <Link to={`/profile/${user?.username}`} style={{textDecoration: "none"}} className='topbarLinks'>
                     <img src={user?.profilePicture?publicFolderLink+user.profilePicture:defaultAvatar} alt="" className='topbarImg'/>
+                    <span className='txtUsername'>{user?.username}</span>
                 </Link>
                 
                 <ExitToAppOutlinedIcon className='logoutButton' onClick={logoutButtonHandler} />
