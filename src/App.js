@@ -1,43 +1,25 @@
-import Home from "./pages/home/Home";
-import Login from "./pages/login/Login";
-import Profile from "./pages/profile/Profile";
-import Register from "./pages/register/Register";
-import {
-  Routes,
-  Route,
-  useLocation,
-  Navigate
-} from "react-router-dom";
-
-
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-  
   return (
-   <Routes>
-     
-      <Route path ='/' element={<RequireAuth><Home/></RequireAuth>}/>
-     
-     
-
-     <Route path = '/register' element={<Register/>}/>
-     <Route path = '/login' element={<Login/>}/>
-     
-      <Route path = '/profile/:username' element={<RequireAuth><Profile/></RequireAuth>}/>
-     
-     
-     
-     
-   </Routes>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
-const RequireAuth = ({children})=>{
-  const location = useLocation();
-  if(!localStorage.socialApp_accessToken){
-    
-    return (<Navigate to={'/login'} state={{from:location}} />)
-    
-  }
-  return children;
-}
+
 export default App;
