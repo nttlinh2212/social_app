@@ -4,9 +4,9 @@ This is my first react project. It is very simple, have some features similar to
 - Login, logout, register
 - Homepage: your posts and your friend posts, like/dislike a post
 - Profile page: + when click on your/your friend profile img 
-                + user information, user's posts, unfollow/follow (when following a user, you can see this user's posts)
+                + user information, user's posts, unfollow/follow (when following a user, you can see this user's posts in home page)
 - post new post: can upload img
 
-Techiniques: React Router, Axios, useEffect, useParams Hook, useContext, Reducer, react-hook-form
+Techiniques/libraries: React Router, Axios, useEffect, useParams Hook, useContext, Reducer, react-hook-form
 
 
