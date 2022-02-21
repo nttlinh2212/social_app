@@ -61,7 +61,7 @@ function Post({post}) {
                 <div className="postTop">
                     <div className="postTopLeft">
                         <Link to={`/profile/${user.username}`}>
-                            <img src={user.profilePicture?publicFolderLink+user.profilePicture:defaultAvatar} alt="profile picture" className='postProfileImg'/>
+                            <img src={user.profilePicture?publicFolderLink+user.profilePicture:defaultAvatar} alt="avatar" className='postProfileImg'/>
                         </Link>
                         <span className="postUsername">{user.username}</span>
                         <span className="postDate">{format(post.createdAt)}</span>
@@ -72,12 +72,12 @@ function Post({post}) {
                 </div>
                 <div className="postCenter">
                     <span className="postContent">{post.desc}</span>
-                    {post.img && <img src={publicFolderLink+post.img} alt="post picture" className='postImg' />     }             
+                    {post.img && <img src={publicFolderLink+post.img} alt="post" className='postImg' />     }             
                 </div>
                 <div className="postBottom">
                     <div className="postBottomLeft">
-                        <img src={publicFolderLink+"like.png"} alt="like icon" className='likeIcon' onClick={likeIconHandler}/>
-                        <img src={publicFolderLink+"heart.png"} alt="hear icon" className='heartIcon' onClick={likeIconHandler}/>
+                        <img src={publicFolderLink+"like.png"} alt="like" className='likeIcon' onClick={likeIconHandler}/>
+                        <img src={publicFolderLink+"heart.png"} alt="heart" className='heartIcon' onClick={likeIconHandler}/>
                         <span className="postLikeCounter">{like} people liked it</span>
                     </div>
                     <div className="postBottomRight">

@@ -110,7 +110,7 @@ function RightbarProfile(props) {
                         return (
                             <Link to={`/profile/${user.username}`} style={{textDecoration:'none'}} key={user._id}>
                                 <div className="rightbarFollowingItem">
-                                <img src={user.profilePicture?publicFolderLink+user.profilePicture:defaultAvatar} alt="profile picture" className='rightbarFollowingImg'/>
+                                <img src={user.profilePicture?publicFolderLink+user.profilePicture:defaultAvatar} alt="profile" className='rightbarFollowingImg'/>
                                 <span className="rightbarFollowingUsername">{user.username}</span>
                                 </div>
                             </Link>

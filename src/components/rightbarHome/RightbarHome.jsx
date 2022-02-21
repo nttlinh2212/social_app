@@ -8,7 +8,7 @@ function RightbarHome(props) {
     return (
         <div>
             <div className="birthdayContainer">
-                    <img src="assets/gift.png" alt="birthday picture" className='birthdayImg'/>
+                    <img src="assets/gift.png" alt="birthday" className='birthdayImg'/>
                     <span className="birthdayText">
                         <b>Mary Montera </b>
                         and 
@@ -16,7 +16,7 @@ function RightbarHome(props) {
                         have a birthday today.
                     </span>
                 </div>
-                <img src="assets/ad.png" alt="ad picture" className='rightbarAd' />
+                <img src="assets/ad.png" alt="ad" className='rightbarAd' />
                 <h4 className="rightbarTitle">Online friends</h4>
                 <ul className='rightbarFriendList'>
                     {Users.map(user=>(

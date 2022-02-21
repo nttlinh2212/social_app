@@ -7,7 +7,7 @@ function RightbarFriend({user}) {
         
             <li className="rightbarFriend">
                 <div className="rightbarFriendProfileContainer">
-                    <img src={publicFolderLink+user?.profilePicture} alt="profile picture" className='rightbarFriendProfileImg' /> 
+                    <img src={publicFolderLink+user?.profilePicture} alt="profile" className='rightbarFriendProfileImg' /> 
                     <span className="rightbarFriendOnline"></span>
                     
                 </div>

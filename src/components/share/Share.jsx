@@ -51,7 +51,7 @@ function Share(props) {
             <div className="shareWrapper">
                 <form onSubmit={postSubmitedHandler}>
                     <div className="shareTop">
-                        <img src={user?.profilePicture?publicFolderLink+user.profilePicture:defaultAvatar} alt="profile picture" className='shareProfileImg' />
+                        <img src={user?.profilePicture?publicFolderLink+user.profilePicture:defaultAvatar} alt="profile" className='shareProfileImg' />
                         <input className="shareInput" placeholder={`What's on your mind ${user?.username}?`} ref={desc}></input>
                     </div>
                     
@@ -59,7 +59,7 @@ function Share(props) {
                     {file && (
                         <div className='shareImgContainer'>
                             <div className='shareImgWrapper'>
-                                <img className='shareImg' src={URL.createObjectURL(file)} alt='share picture'/>
+                                <img className='shareImg' src={URL.createObjectURL(file)} alt='share'/>
                                 <Cancel className='shareCancelButton' onClick={shareCancelHandler}/>
                             </div>
                             
