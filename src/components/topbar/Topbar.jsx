@@ -80,7 +80,7 @@ function Topbar(props) {
 
                 </div>
                 <Link to={`/profile/${user?.username}`} style={{textDecoration: "none"}} className='topbarLinks'>
-                    <img src={user?.profilePicture?publicFolderLink+user.profilePicture:defaultAvatar} alt="" className='topbarImg'/>
+                    <img src={user?.profilePicture?publicFolderLink+user.profilePicture:defaultAvatar} alt="profile picture" className='topbarImg'/>
                     <span className='txtUsername'>{user?.username}</span>
                 </Link>
                 

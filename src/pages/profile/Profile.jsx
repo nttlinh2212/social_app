@@ -40,8 +40,8 @@ function Profile(props) {
                 <div className="profileRight">
                     <div className="profileRightTop">
                         <div className="profileCover">
-                            <img src={user.coverPicture?publicFolderLink+user.coverPicture:defaultCover} alt="" className='profileCoverImg'/>
-                            <img src={user.profilePicture?publicFolderLink+user.profilePicture:defaultAvatar} alt="" className='profileUserImg'/>
+                            <img src={user.coverPicture?publicFolderLink+user.coverPicture:defaultCover} alt="cover picture" className='profileCoverImg'/>
+                            <img src={user.profilePicture?publicFolderLink+user.profilePicture:defaultAvatar} alt="profile picture" className='profileUserImg'/>
                         </div>
                         <div className="profileInfo">
                             <h4 className='profileRightTopUsername'>{user.username}</h4>
